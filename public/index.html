@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Coffeehouse</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/scripts.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js"></script>
+		
+	</head>
+	<body>
+
+		<!-- Naglowek strony -->
+		<header class="top">
+			<div class="container">
+				<div class="main-menu">
+					<ul>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="offer.html">Offer</a></li>
+						<li><a href="#komentarze">Recommendations</a></li>
+						<li><a href="#namiary">Contact</a></li>
+					</ul>				
+				</div>
+			</div>
+		</header>
+
+		<!-- Banner -->
+		<section class="banner" >
+			<div class="container center-text" >
+				<h1>Welcome to the best cafe in town!</h1>
+				<a href="offer.html" class="button button-light">Check the menu</a>			
+			</div>			
+		</section>
+
+		<!-- Zalety oferty -->
+		<section class="intro" id="zap">
+			<div class="container" >
+				<h2 class="center-text">Why is it worth choosing us?</h2>
+				<div id="col1" class="col-one-third center-text">
+					<img src="img/ikona_1.jpg" alt="Ikona 1">
+					<h3 >The best baristas</h3>
+					<p>The customer is very important, the customer will be followed by the customer. As for the chocolate as well as the ecological boundaries. Now is the time.</p>
+				</div>
+				<div id="col2" class="col-one-third center-text">
+					<img src="img/ikona_2.jpg" alt="Ikona 1">
+					<h3 >The most delicious coffees</h3>
+					<p>The customer is very important, the customer will be followed by the customer. As for the chocolate as well as the ecological boundaries. Now is the time.</p>
+				</div>
+				<div id="col3" class="col-one-third center-text">
+					<img src="img/ikona_3.jpg" alt="Ikona 1">
+					<h3 >And for dessert....</h3>
+					<p>The customer is very important, the customer will be followed by the customer. As for the chocolate as well as the ecological boundaries. Now is the time.</p>
+				</div>
+			</div>
+		</section>
+<a name="komentarze"></a>
+		<!-- Promocje -->
+		<section class="recommendations">
+			<div class="container">
+				<div class="col-half">
+					<img src="img/dekor.jpg" alt="Dekor">
+				</div>
+				<div class="col-half">
+					
+					<h2>Get to know our recommendations</h2>
+					<p>It is very important for the customer to pay attention to the adipiscing process. The free of these, so to speak.</p>
+					<div class="showreco"><br>
+					<button class="button button-dark button-reco">Recommendations</button>	
+					</div><br><br>
+				</div>
+
+				<div class="content">
+					<!-- 	Miejsce na treść -->
+					</div>							
+			</div>
+		</section>
+
+		<!-- Kontakt -->
+		<section class="reservation">
+			<div class="container">
+				<h2 class="center-text">Reserve a table</h2>
+				<h5 class="center-text">We will respond to your reservation regarding the e-mail address provided within a short time</h5>
+				<div class="col-half">
+					<form action="" id="myForm" >
+						<label for="name">
+							<strong>First name and last name</strong>
+						</label><br>
+						<input type="text" name="name" id="name" required=""><br>
+						<label for="email">
+							<strong>Email</strong>
+						</label><br>
+						<input type="email" name="email" id="email" required=""><br>
+						<label for="persons">
+							<strong>Number of people</strong>
+						</label><br>
+							<input type="number" name="persons" value="" min="1" max="10" id="persons" required=""><br>
+							<label for="data">
+						<strong>Data</strong><br>
+					</label>
+					<input type="date" id="datePickerId" required="" />
+					<label for="hour"><br>
+					<strong>Time (10:00 - 21:00)</strong><br>
+					</label>
+					<input type="time" id="hour" min="10:00" max="21:00" required="" /><br>
+
+					<div class="g-recaptcha" id='recaptcha' data-sitekey="6LfxTXsUAAAAAABjsqvmuDecWPDq-EzS71QHG_RA"  data-callback="onCompleted" >
+					</div>
+					<div id="prec"></div>
+					<div id="rec"></div>
+						<button type="submit" class="button button-dark" id=''>Book</button>
+				
+
+					
+					</form>
+						
+				
+				</div>
+				<div class="col-half" id="reservation-right">
+					<h4>find us</h4><a name="namiary"></a>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5124.670286193969!2d20.018597004421565!3d50.042552806419366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644f2f3e47245%3A0x1c4381bac84f2486!2sKawowa%2C+30-737+Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1541014584229" width="500" height="321" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>			
+		</section>
+
+		<!-- Stopka strony -->
+		<footer class="site-footer">
+			<div class="container">
+				<p>&copy; AWP PROJECT</p>
+			</div>
+		</footer>
+		
+
+	</body>
+
+
+</html>
+
