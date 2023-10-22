@@ -5,7 +5,7 @@ $(document).ready (function(){
         		/*console.log('form submitted.');*/
        $("#prec").html("<br>");
 
-       	  $("#rec").addClass("alert").html("Confirm that you are not a boot !");
+       	  $("#rec").addClass("alert").html("We are Regestering your reservation.");
 
 	        	if (!grecaptcha.getResponse()) {
 	           /* console.log('captcha not yet completed.');*/

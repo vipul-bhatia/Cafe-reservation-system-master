@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/dominikblak/Coffee/issues"
   },
-  "homepage": "https://github.com/dominikblak/Coffee#readme"
+  "homepage": "https://github.com/dominikblak/Coffee#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0"
+  }
 }

@@ -82,7 +82,7 @@
 				<h2 class="center-text">Reserve a table</h2>
 				<h5 class="center-text">We will respond to your reservation regarding the e-mail address provided within a short time</h5>
 				<div class="col-half">
-					<form action="" id="myForm" >
+					<form  action="/reserve" method="post" id="myForm" >
 						<label for="name">
 							<strong>First name and last name</strong>
 						</label><br>
@@ -104,11 +104,9 @@
 					</label>
 					<input type="time" id="hour" min="10:00" max="21:00" required="" /><br>
 
-					<div class="g-recaptcha" id='recaptcha' data-sitekey="6LfxTXsUAAAAAABjsqvmuDecWPDq-EzS71QHG_RA"  data-callback="onCompleted" >
-					</div>
 					<div id="prec"></div>
 					<div id="rec"></div>
-						<button type="submit" class="button button-dark" id=''>Book</button>
+					<button type="submit" class="button button-dark">Book</button>
 				
 
 					
